@@ -20,7 +20,7 @@ class StripeController extends AbstractController
     public function index(EntityManagerInterface $em,Cart $cart, $reference)
     {
         $products_for_stripe = [];
-        // $YOUR_DOMAIN = 'http://localhost:8000';
+        // env prod  $YOUR_DOMAIN= monsiteheroku.com
         $YOUR_DOMAIN = 'http://localhost:8741';
 
         $order = $em->getRepository(Order::class)->findOneByReference($reference);
@@ -59,13 +59,12 @@ class StripeController extends AbstractController
         /**
          * dev
          */
-         Stripe::setApiKey('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+         Stripe::setApiKey('KEY!!!');
         /**
          * prod
          */
-        // Stripe::setApiKey('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');
+        // Stripe::setApiKey('KEY PROD !!!');
 
-        // Numéro sur la carte : 4000 0012 4000 0000
 
 
 
