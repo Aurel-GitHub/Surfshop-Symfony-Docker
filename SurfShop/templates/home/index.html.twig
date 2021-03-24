@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block carousel %}{% endblock %}
+
+{% block content %}
+
+    <!-- Three columns of text below the carousel -->
+
+    <h3 class="reveal-7">Nos meilleures ventes</h3>
+    <p class="reveal-8">Découvrez les articles les plus vendus du moment.</p>
+    <div class="row">
+        {% for product in products %}
+            <div class="col-md-3 reveal-9" >
+                {% include 'product/single_product.html.twig' %}
+            </div>
+        {% endfor %}
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 ">
+            <h2 class="featurette-heading reveal-2">Une équipe de professionnel <span class="text-muted">avec des professionnels au grand savoir-faire.</span></h2>
+            <p class="lead reveal-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="col-md-5 reveal-1">
+            {# <img src="{{ asset('assets/bodyImg/image1.jpg') }}"> #}
+            <img src="https://images.pexels.com/photos/5967744/pexels-photo-5967744.jpeg" alt="savoir-faire" class="img-fluid" style="width:400px; height: 400px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2 ">
+            <h2 class="featurette-heading reveal-5">Site fictif réalisé en <span class="text-muted">PHP/Symfony</span></h2>
+            <p class="lead reveal-6">Ce site est fictif et sans aucun but lucratif. Mon objectif au travers de ce projet est d'utiliser les différentes possibilitées qu'offre Symfony, afin de réaliser un site complet de l'inscription de l'utilisateur jusqu'au paiement de la commande. <br>Le côté back-office permet au personnel d'être entièrement autonome dans la gestion du site sans avoir besoin d'écrire une seule ligne de code :)<br>
+            Pour plus d'informations au sujet du site, <a href="mailto:aurelien.landouer@hotmail.fr">contactez-moi</a>.
+            </p>
+        </div>
+        <div class="col-md-5 order-md-1 reveal-4">
+                    {# <img src="{{ asset('assets/bodyImg/image2.jpg') }}"> #}
+            <img src="https://images.pexels.com/photos/757133/pexels-photo-757133.jpeg" alt="planches de surf" class="img-fluid" style="width:400px; height: 400px;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+{% endblock %}

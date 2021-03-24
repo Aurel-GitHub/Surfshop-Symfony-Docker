@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte - SurfShop 40/64{% endblock %}
+
+{% block content %}
+     <h1>Mon compte</h1>
+     {% if is_granted('ROLE_ADMIN') %}
+          <a class="btn btn-info" href="/admin">Accéder au back-office</a><br>
+     {% endif %}
+     <br>
+     Bienvenue {{ app.user.firstname }} dans votre compte.
+     <br>
+     <hr>
+     <div class="row">
+          <div class="col-md-4">
+               <div class="account-item text-center">
+                    <a href="{{ path('account_password') }}"><i class="fas fa-lock"></i> Modifier mon mot de passe</a>
+               </div>
+          </div>
+          <div class="col-md-4">
+               <div class="account-item text-center">
+                    <a href="{{ path('account_address') }}"><i class="fas fa-map-marker-alt"></i> Gérer mes addresses</a>      
+               </div>
+          </div>
+          <div class="col-md-4">
+               <div class="account-item text-center">
+                    <a href="{{ path('account_order') }}"><i class="fas fa-shopping-basket"></i> Mes commandes</a>      
+               </div>
+          </div>
+     </div>
+     <hr>
+
+{% endblock %}
+ 
+

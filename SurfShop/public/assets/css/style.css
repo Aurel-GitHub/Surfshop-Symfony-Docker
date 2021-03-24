@@ -1,0 +1,204 @@
+/** Effet CSS */
+@keyframes transitionIn {
+    0% {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
+/** Body */
+body {
+    position: relative;   
+    --nav-load-time : 875ms;
+} 
+
+/** Main */
+main {
+     animation: transitionIn 4s; 
+}
+
+/** Navbar */
+.navbar {
+    padding-bottom: 0%;
+    opacity:75%;
+    /* animation: nav-load var(--nav-load-time) ease-in; */
+}
+.navbar-item-custom, .navbar-item-custom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar li:hover {
+    opacity: 25%;
+}
+.navbar-item-custom #compte:hover {
+    opacity: 25%;
+}
+.navbar-item-custom #connexion:hover {
+    opacity: 25%;
+}
+.navbar-item-custom #deconnexion:hover {
+    opacity: 25%;
+}
+.navbar-item-custom #inscription:hover {
+    opacity: 25%;
+}
+/** Navbar - Icone Mon Panier */
+.cart-icon {
+    height: 20px;
+    padding-left: 20px;
+}
+
+/** Page Connexion */
+.block-small {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/** Page Mon Compte */
+.account-item {
+    background-color:#f1f2f6;
+    padding: 50px;
+}
+.account-item a {
+    text-decoration:none; 
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #4b6584;
+    font-weight: bold;
+    
+}
+.account-item a:hover {
+    color: black;
+}
+
+/** Page Produits */
+.product-item h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+.product-item {
+    margin-top: 50px;
+}
+.product-item .product-subtitle {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.product-item .product-price {
+    font-size: 15px;
+    font-weight: bold;
+}
+.product-container {
+    margin-bottom: 175px;
+}
+.product-item {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+.product-item:hover {
+    	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+/** Filtres Produits */
+#categories .form-check {
+    padding-left: 2.35rem;
+}
+#categories .form-check {
+    background-color: #ffffff;
+}
+#categories .form-check-input {
+    margin-right: -2.25rem;
+    margin-left: -1.10rem;
+}
+#categories .col-md-3 {
+    display: block;
+    position: sticky;
+    top: 20px;
+}
+
+/** Fiche Produit */
+.product-page-price {
+    margin-top: 20x;
+    /* font-size: 20px; */
+}
+.product-item h5 {
+    padding-top: 15px;
+}
+
+/** Page Validation Commande */
+#order_carriers .form-check {
+    background-color: #f4f8ff;
+    padding: 20px 65px ;
+    margin-top: 7px;
+}
+#order_carriers .form-check-label {
+    margin-left: -20px;
+}
+#order_carriers .form-check-input {
+    padding-top: 45px;
+    padding-left: -5px;
+}
+#order_addresses .form-check {
+    background-color: #f4f8ff;
+    padding: 20px 65px ;
+    margin-top: 7px;
+}
+#order_addresses .form-check-label {
+    margin-left: -20px;
+}
+#order_addresses .form-check-input {
+    padding-top: 45px;
+    padding-left: -5px;
+}
+.order-summary {
+    background-color: #f4f8ff;
+    padding: 20px;
+    /* margin-top: 20px; */
+}
+.order-summary .row .col-2 img {
+    padding-left: -20px;
+}
+
+/** Page Récapitulatif */
+#transporteur-recapitulatif {
+    background-color: #f4f8ff;
+    padding: 20px 25px ;
+    margin-top: 7px;
+}
+#addresse-recapitulatif {
+    background-color: #f4f8ff;
+    padding: 20px 25px ;
+    margin-top: 7px;
+}
+
+/** Page Admin */
+a.action-updatePreparation {
+    margin-left: 25px;
+}
+
+/** Footer */
+.footer-custom {
+    text-align: center;
+    position:  fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #b9b9b9;
+    opacity: 75%;
+    padding-top: 8px;
+}
+
+
+
+
+
+
+

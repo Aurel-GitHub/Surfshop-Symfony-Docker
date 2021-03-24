@@ -1,0 +1,43 @@
+<?php
+
+// namespace App\Classes;
+
+// use Mailjet\Client;
+// use \Mailjet\Resources;
+
+
+// class Mail
+// {
+//     private $api_key = '369abf352b62a66dfcf3ffab6bc25bd1';
+//     private $api_key_secret = 'eda4a4500bda50de47e5cd5a24519718';
+
+//     public function send($to_email, $to_name, $subject, $content)
+//     {
+//         $mj = new Client($this->api_key, $this->api_key_secret,true,['version' => 'v3.1']);
+//         $body = [
+//             'Messages' => [
+//                 [
+//                     'From' => [
+//                         'Email' => "surfshop64@gmail.com",
+//                         'Name' => "SurfShop 40/64"
+//                     ], 
+//                     'To' => [
+//                         [
+//                             'Email' => $to_email,
+//                             'Name' => $to_name
+//                         ]
+//                     ],
+//                     'TemplateID' => 2416490,
+//                     'TemplateLanguage' => true,
+//                     'Subject' => $subject,
+//                     'Variables' => [
+//                         'content' => $content
+//                     ]
+//                 ]
+//             ]
+//         ];
+
+//         $response = $mj->post(Resources::$Email, ['body' => $body]);
+//         $response->success();
+//     }
+// }

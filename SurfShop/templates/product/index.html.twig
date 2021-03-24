@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}{% block title %}Nos produits - SurfShop 40/64{% endblock %}{% block content %}    
+<div class="row">
+	<div class="col-md-3">
+	{% include 'product/_filter.html.twig' with {form: form} only%} 
+	</div>
+	<div class="col-md-9">
+		<h3 class="reveal-10">Nos produits</h3>
+		<div class="row product-container reveal-11">
+			        {% for product in products %}            
+			<div class="col-md-4">
+				{% include 'product/single_product.html.twig' %}
+			</div>
+			        {% endfor %}    
+		</div>
+	</div>
+</div>
+
+{% endblock %}
