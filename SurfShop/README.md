@@ -2,13 +2,8 @@
 PHP/Symfony
 
 Hey ! 
-To launch the project
+It's my new E-commerce Website available here : https://surfshop-symfony.herokuapp.com/
 
-- update the db name and password in your .env
-- composer install && php bin/console doctrine:database:create &&  php bin/console make:migration && php bin/console doctrine:migrations:migrate
-- php -S localhost:8000 -t public
-
-- to test your sending e-mail use http://www.yopmail.com/
-- to buy with fake credit card in Stripe use 4242 4242 4242 4242
-
-Waiting to fix the image upload on EasyAdminV3 comment vendor\easycorp\easyadmin-bundle\src\Form\Type\FileUploadType.php  from 161 at 163.
+I used Symfony, MySQL Workbench, Docker. For payment i integrated  the Stripe API and MailerJet for sending mail in prod.
+If you want to try to place an order use a real email address (@orange, @free, @hotmail, @outlook, @gmail), and this number card 4242 4242 4242 4242.
+Enjoy !
